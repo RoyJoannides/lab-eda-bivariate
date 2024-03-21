@@ -1,0 +1,53 @@
+# Business-Centric Report: Diving into Amazon UK Product Insights Part II
+
+## Objective:
+The objective of this analysis is to explore the product listing dynamics on Amazon UK and extract actionable business insights. By understanding the distribution, central tendencies, and relationships of various product attributes, businesses can make more informed decisions on product positioning, pricing strategies, and inventory management.
+
+## 1. Analyzing Best-Seller Trends Across Product Categories:
+A crosstab analysis revealed categories where being a best-seller was more prevalent. These were health and personal care, grocery, mobile phone accesories and power & hand tools.
+
+Chi-square test and Cramér's V were conducted to determine the independence and stregth of association between best-seller status and category.
+
+The Chi-square test recorded a P value of 0.0, this suggests that there is a significant association between the product categories and best seller trends. The Cramer's v recorded a value of 0.12, this suggests a weak association between the two variables. 
+
+
+## 2. Exploring Product Prices and Ratings Across Categories and Brands:
+
+Violin plots depicted the distribution of prices across different product categories. 
+- The boys, fragrances, handmade and men categories display a wide range of prices, with a thicker section around the median, suggesting that most products in this category fall within this price range.
+- The makeup, kids art and craft supplies and manicure category has a more condensed price distribution, with a majority of products priced in the lower to mid-range.
+- The plants,seeds and bulbs,category has a bimodal distribution, indicating two major groups of product prices.
+
+A bar chart compared the average price of products for the top 10 categories. Products such as motherboards, tablets, desktop pcs, boxing shoes amd graphics cards were the top 5 best seller goods in terms of average price.
+
+Box plots visualized the distribution of product ratings based on category.
+- All top 10 categories, while having a high rating, also exhibited a wide range of ratings, suggesting variability in the type of products within these categories.
+-Handmade gifts recorded the relatively lowest rating of about 3 stars althogh being in the top 10 categories.
+
+The Category with the highest median rating was Computer Memory. the median rating in this category was 4.7 stars.
+
+## Investigating the Interplay Between Product Prices and Ratings:
+
+Correlation coefficients and a correlation heatmap were used to analyze the correlation between price and rating. 
+
+- The pearson correlation coefficient between price and ratings was approximately -0.067. This indicates a very weak negative linear correlation between product price and its rating.
+- The spearman correlation coefficient between price and stars is approximately -0.05. This indicates a very weak negative monotonic relationship between between product price and its rating. This means that when product price increases, its rating does not necessarily to increase.
+
+The Scatter plot visualization showed no clear relationship between product rating and price.
+
+The correlation heatmap indicated very weak correlation between numerical variables in the dataset.
+
+The QQ plot examined if product prices followed a normal distribution. The plot showed that product prices did not follow a normal ditribution.
+Especially in the lower tail, the data points deviate significantly from the red line, suggesting a heavier tail. This indicates that there are more extreme low values in product price than would be expected in a normal distribution. It also showed a bimodal distribution with the right hand side of the plot dipping below the red line(normality) after a rise.
+Also, the central portion of the data points doesn't align perfectly with the line, suggesting possible deviations from normality in the main body of the distribution as well.
+
+# Conclusion:
+Health & Personal Care, Grocery, and Mobile Phone Accessories are the most listed product categories on Amazon UK.
+Product prices exhibit wide variation, with some outliers indicating premium-priced products.
+Certain categories show a higher prevalence of best-sellers, suggesting potential areas for focused marketing and promotion.
+The relationship between product price and rating is weak, indicating that customers may prioritize other factors beyond price when making purchasing decisions.
+
+# Recommendations:
+Businesses should focus on optimizing their product listings within popular categories to capitalize on high demand.
+Marketing efforts should target categories with a high prevalence of best-sellers to maximize visibility and sales.
+Continuous monitoring of customer feedback and product ratings can inform product improvements and enhance customer satisfaction.
